@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Forward clipboard to ChatGPT desktop when Ctrl+V is pressed globally."""
+"""Forward clipboard to ChatGPT desktop when Ctrl+Shift+V is pressed globally."""
 
 import logging
 import threading
@@ -10,8 +10,8 @@ import pyperclip
 from pywinauto import Desktop
 
 
-HOTKEY = "ctrl+v"
-WINDOW_TITLE_PATTERN = r".*ChatGPT.*"
+HOTKEY = "ctrl+shift+v"
+WINDOW_TITLE_PATTERN = r"^(Christopher Cook -|.*ChatGPT.*)"
 _handling_lock = threading.Lock()
 
 
