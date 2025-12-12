@@ -16,3 +16,4 @@ Global helper that intercepts `Ctrl+V`, focuses the ChatGPT desktop app, pastes 
 
 Stop the helper with `Ctrl+C` in the terminal.
 
+.\venv\Scripts\Activate.ps1
